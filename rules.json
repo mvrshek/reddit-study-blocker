@@ -9,7 +9,7 @@
       }
     },
     "condition": {
-      "requestDomains": ["reddit.com"],
+      "requestDomains": ["reddit.com","instagram.com","linkedin.com"],
       "resourceTypes": ["main_frame"]
     }
   }

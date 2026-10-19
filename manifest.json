@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Study Mode — Reddit Blocker",
+  "name": "Study Mode, Social media Blocker",
   "version": "1.0.0",
-  "description": "Redirect Reddit to a quiet reminder page while you study. Includes an on/off switch.",
+  "description": "Redirect socials to a quiet reminder page while you study. Includes an on/off switch.",
   "minimum_chrome_version": "101",
   "permissions": ["declarativeNetRequestWithHostAccess"],
-  "host_permissions": ["*://*.reddit.com/*"],
+  "host_permissions": ["*://*.reddit.com/*","*://*.instagram.com/*","*://*.linkedin.com/*"],
   "action": {
     "default_title": "Study Mode",
     "default_popup": "popup.html"
@@ -13,7 +13,7 @@
   "declarative_net_request": {
     "rule_resources": [
       {
-        "id": "reddit_redirect",
+        "id": "social_media_redirect",
         "enabled": true,
         "path": "rules.json"
       }
