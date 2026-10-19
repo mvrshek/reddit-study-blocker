@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Mode</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body class="popup-page">
+    <main class="popup-panel">
+      <p class="eyebrow">A LITTLE SPACE TO FOCUS</p>
+      <h1 class="popup-title">Study Mode</h1>
+      <p class="popup-description">Give your attention somewhere to stay.</p>
+
+      <div class="status-row" aria-live="polite" aria-atomic="true">
+        <span id="status-dot" class="status-dot" aria-hidden="true"></span>
+        <span id="status-text">Checking study mode…</span>
+      </div>
+      <p id="status-description" class="status-description">
+        Reading your current Reddit setting.
+      </p>
+
+      <button id="toggle-button" class="button button-primary" type="button" disabled>
+        Please wait…
+      </button>
+      <button id="preview-button" class="button button-secondary" type="button">
+        Preview reminder page
+      </button>
+      <p id="error-message" class="error-message" role="alert" hidden></p>
+
+      <p class="popup-footnote">Reddit only · Your setting stays in this browser</p>
+    </main>
+  </body>
+</html>
